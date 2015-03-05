@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>海口市公共安全联动指挥系统</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" /> 
+
+
+    <!-- GC -->
+<!--字体-->
+<link rel="stylesheet" href="../../shared/font/font.css" />
+<link href="../../shared/images/favicon.ico" rel="SHORTCUT ICON" />
+
+<!--总布局-->
+<link rel="stylesheet" type="text/css" href="../../shared/layout.css" />
+
+<script type="text/javascript" src="../../shared/include-ext.js"></script>
+<script type="text/javascript" src="../../shared/options-toolbar.js"></script>
+<script type="text/javascript" src="../../../js/ext-lang-zh_CN.js"></script>
+
+<script type="text/javascript">
+var isAnswer = false;
+function hadAnswer(answer){
+	isAnswer = answer;
+}
+setTimeout(function(){
+	isAnswer = true;
+},2000);
+//获取单个调度时的电话号码
+function globalGetPhoneNumber(phoneNumber){
+	//alert(phoneNumber);
+	//console.info("globalGetPhoneNumber");
+	//console.info(phoneNumber);
+	window.opener.parentGetPhoneNumber(phoneNumber);
+	//opener.location="javascript:parentGetPhoneNumber(phoneNumber)";
+	Ext.MessageBox.show({
+        title: '请稍后',
+        msg: '正在拨打号码...',
+        progressText: '拨号中...',
+        width:300,
+        progress:true,
+        closable:false,
+        modal: false
+        //animateTarget: 'mb6'
+    });
+    // this hideous block creates the bogus progress
+	
+    var f = function(v){
+         return function(){
+             if(v == 12 && isAnswer){
+                 Ext.MessageBox.hide();
+             }else{
+                 var i = v/11;
+                 //Ext.MessageBox.updateProgress(i, Math.round(100*i)+'% completed');
+                 Ext.MessageBox.updateProgress(i, '拨号中...');
+                 
+             }
+        };
+    };
+    for(var i = 1; i < 13; i++){
+    	setTimeout(f(i), i*200);
+    }
+    
+}
+</script>
+
+<!--ArcGis-->
+ 	<!-- arcgis CSS -->
+    <link rel="stylesheet" type="text/css"
+		href="js/arcgis_js_api/library/3.10/3.10/js/dojo/dijit/themes/tundra/tundra.css">
+	<link rel="stylesheet" type="text/css"
+		href="js/arcgis_js_api/library/3.10/3.10/js/esri/css/esri.css" />
+	<link rel="stylesheet" type="text/css"
+		href="js/arcgis_js_api/library/3.10/3.10/js/dojo/dijit/themes/claro/claro.css">	
+		
+	<!--arcgis JS -->
+	<script type="text/javascript" src="js/arcgis_js_api/library/3.10/3.10/init.js"></script>
+	<script type="text/javascript" src="js/arcgis_js_api/jquery-1.8.0.js"></script>
+<!--ArcGis-->
+
+<link rel="stylesheet" type="text/css" href="css/diaoDuWin.css">
+<link rel="stylesheet" type="text/css" href="css/GisMapLayout.css"> 
+
+<script type="text/javascript" src="js/XuNiDom.js"></script>
+
+<script type="text/javascript" src="js/GisGlobalFunction.js"></script>
+<script type="text/javascript" src="js/GisMapLayout.js"></script>
+<!--任务调用窗口所需文件-->
+<script type="text/javascript" src="../KX/lwj/TaskAllocation-Conductor-Single.js"></script>
+
+</head>
+<body id="bodyId">
+    <!-- 地图展示页面内容-->
+    <div id="ArcGisPanel">
+        <!--content-->  
+        <div id="map" style="height:1200px"></div>
+    	<div id="HomeButton"></div>
+    </div>
+     
+    
+     <!-- 灰色背景条图 -->
+	<div id="huiBackground"></div>
+    
+    <!-- 底部-->
+    <div id="south" class="x-hide-display"></div>
+	<div id="clear"></div>
+	<div id="circle"></div>
+	<div id="polygon"></div>
+	<div id="freehandPolygon"></div>
+	<div id="freeHandPolyline"></div>
+	<div id="arrow"></div>
+	<div id="pointer"></div>
+	
+	<div id="replaceDom"></div>
+	<div id="positionReplaceDom"></div>
+	
+	<!-- 鹰眼图 -->
+	<!-- 
+	<div id="yingYanTu2"></div>
+	<div id="yingYanTu"></div>
+	 -->
+	 
+	 <img id="loadingImg" src="../GISMap/images/loading.gif" style="z-index:1000;left:48%;top:48%;position:absolute">
+</body>
+
+</html>

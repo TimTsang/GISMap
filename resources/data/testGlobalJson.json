@@ -1,0 +1,17 @@
+{
+	"result" : true,
+	"list" : [{
+		"id" : "2314665813564103651024254",
+		"parentId" : "001",
+		"relate" : "44568156434",
+		"text" : "显示当前处理事件的信息",
+		"eventName":"当前处理事件",
+		"username" : "",
+		"department" : "",
+		"event" : "7543sdhf5shbf",
+		"file" : "",
+		"longitude":113.36982846876456,
+        "latitude":23.07145318149273,
+		"pictureUrl":"../GISMap/images/che.png",
+	}]
+}

@@ -1,0 +1,17 @@
+[{
+    "text": "社会车车辆资源", 
+    "id":"shehuiche",
+    "leaf":true,
+    "checked":false
+    
+},{
+    "text": "市政府车辆资源", 
+    "id":"shizhengfu",
+    "leaf":true,
+    "checked":false
+},{
+    "text": "交通局车辆资源", 
+    "id":"jiaotongju",
+    "leaf":true,
+    "checked":false
+}]

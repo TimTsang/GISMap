@@ -1,0 +1,137 @@
+{
+    "result": true,
+    "data": [
+        {   
+            "id" : "sijiache",
+            "LayerId":"001",
+            "boxLabel": "私家车",
+            "name": "name",
+            "inputValue": "sijiache",
+            "Longitude":113.40222974791172,
+            "Latitude":23.070727287255216,
+            "pictureUrl":"../GISMap/images/che.png",
+            "videoId":"14073109001310013797"
+        },
+        {   
+            "id" : "xiaofangche",
+            "LayerId":"003",
+            "boxLabel": "消防车",
+            "name": "name",
+            "inputValue": "xiaofangche",
+            "Longitude":113.40658511333679,
+            "Latitude":23.04901645051507,
+            "pictureUrl":"../GISMap/images/che.png",
+            "videoId":"14073109001310013797"
+        },
+        {   
+            "id" : "bus",
+            "LayerId":"004",
+            "boxLabel": "巴士",
+            "name": "name",
+            "inputValue": "bus",
+            "Longitude":113.36045783406213,
+            "Latitude":23.041295575443346,
+            "pictureUrl":"../GISMap/images/che.png",
+            "videoId":"14073109001310013797"
+        },
+        {   
+            "id" : "xiaoche",
+            "LayerId":"005",
+            "boxLabel": "校车",
+            "name": "name",
+            "inputValue": "xiaoche",
+            "Longitude":113.36982846876456,
+            "Latitude":23.07145318149273,
+            "pictureUrl":"../GISMap/images/che.png",
+            "videoId":"14073109001310013797"
+        },
+        {   
+            "id" : "sijiache1",
+            "LayerId":"006",
+            "boxLabel": "私家车1",
+            "name": "name",
+            "inputValue": "sijiache1",
+            "Longitude":113.36685890142928,
+            "Latitude":23.049610363982125,
+            "pictureUrl":"../GISMap/images/che.png",
+            "videoId":"14073109001310013797"
+        },
+        {   
+            "id" : "xiaofangche1",
+            "LayerId":"007",
+            "boxLabel": "消防车1",
+            "name": "name",
+            "inputValue": "xiaofangche1",
+            "Longitude":113.37655948805786,
+            "Latitude":23.064260229502832,
+            "pictureUrl":"../GISMap/images/che.png",
+            "videoId":"14073109001310013797"
+        },
+        {   
+            "id" : "bus1",
+            "LayerId":"008",
+            "boxLabel": "巴士1",
+            "name": "name",
+            "inputValue": "bus1",
+            "Longitude":113.4082348729675,
+            "Latitude":23.034168613838677,
+            "pictureUrl":"../GISMap/images/che.png",
+            "videoId":"14073109001310013797"
+        },
+        {   
+            "id" : "xiaoche1",
+            "LayerId":"009",
+            "boxLabel": "校车1",
+            "name": "name",
+            "inputValue": "xiaoche1",
+            "Longitude":113.38045292078634,
+            "Latitude":23.051194133227607,
+            "pictureUrl":"../GISMap/images/che.png",
+            "videoId":"14073109001310013797"
+        },
+        {   
+            "id" : "sijiache2",
+            "LayerId":"010",
+            "boxLabel": "私家车2",
+            "name": "name",
+            "inputValue": "sijiache2",
+            "Longitude":113.35234101667903,
+            "Latitude":23.069473469935875,
+            "pictureUrl":"../GISMap/images/che.png",
+            "videoId":"14073109001310013797"
+        },
+        {   
+            "id" : "xiaofangche2",
+            "LayerId":"010",
+            "boxLabel": "消防车2",
+            "name": "name",
+            "inputValue": "xiaofangche2",
+            "Longitude":113.37886915154085,
+            "Latitude":23.04980833513781,
+            "pictureUrl":"../GISMap/images/che.png",
+            "videoId":"14073109001310013797"
+        },
+        {   
+            "id" : "bus2",
+            "LayerId":"010",
+            "boxLabel": "巴士2",
+            "name": "name",
+            "inputValue": "bus2",
+            "Longitude":113.39609264208548,
+            "Latitude":23.057661190979992,
+            "pictureUrl":"../GISMap/images/che.png",
+            "videoId":"14073109001310013797"
+        },
+        {   
+            "id" : "xiaoche2",
+            "LayerId":"010",
+            "boxLabel": "校车2",
+            "name": "name",
+            "inputValue": "xiaoche2",
+            "Longitude":113.36316343985649,
+            "Latitude":23.03086909457726,
+            "pictureUrl":"../GISMap/images/che.png",
+            "videoId":"14073109001310013797"
+        }
+    ]
+}
